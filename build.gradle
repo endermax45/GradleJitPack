@@ -1,7 +1,15 @@
-dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
-	}
+plugins {
+    id 'java'
+}
+
+group = 'com.github.endermax45'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.joecks:google-play-scraper-java:master-SNAPSHOT'
+}
